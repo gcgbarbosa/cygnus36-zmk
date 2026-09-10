@@ -5,8 +5,8 @@
 #include <dt-bindings/zmk/keys.h>
 
 // https://zmk.dev/docs/keymaps/behaviors/mouse-emulation#mouse-emulation-defines
-/* #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600 */
-/* #define ZMK_POINTING_DEFAULT_SCRL_VAL 15    // default: 10 */
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 15    // default: 10
 
 #include <dt-bindings/zmk/pointing.h>
 
