@@ -84,7 +84,7 @@
 
         navigation {
             bindings = <
-&kp LS(LA(H))   &none           &mmv MOVE_UP     &none            &mkp MCLK       &kp LG(DOT)     &kp LA(H)  &kp LA(J)      &kp LA(K)    &kp LG(L)  &none  &kp LS(LA(L))
+&kp LS(LA(H))   &none           &mmv MOVE_UP     &none            &mkp MCLK       &kp LG(DOT)     &kp LA(H)  &kp LA(J)      &kp LA(K)    &kp LA(L)  &none  &kp LS(LA(L))
 &kp CAPS        &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &mkp LCLK       &mkp RCLK       &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &none  &kp LA(TAB)
 &kp PSCRN       &none           &msc SCRL_LEFT   &msc SCRL_UP     &msc SCRL_DOWN  &msc SCRL_RIGHT &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none  &kp LA(BACKSLASH)
                                                  &trans           &trans          &trans          &trans     &trans         &trans
