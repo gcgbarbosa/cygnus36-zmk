@@ -77,35 +77,35 @@
             bindings = <
 &kp TAB       &kp Q        &kp W        &kp E        &kp R          &kp T     &kp Y      &kp U          &kp I          &kp O        &kp P           &kp RET
 &kp ESC       &hml LGUI A  &hml LALT S  &hml LCTL D  &hml LSHIFT F  &kp G     &kp H      &hmr RSHIFT J  &hmr RCTL K    &hmr RALT L  &hmr RGUI SEMI  &kp SQT
-&kp LC(BSPC)  &kp Z        &kp X        &kp C        &kp V          &kp B     &kp N      &kp M          &kp COMMA      &kp DOT      &kp FSLH        &kp LA(TAB)
-                                        &kp LC(A)    &mo 1          &kp BSPC  &kp SPACE  &mo 2          &mo 3 
+&kp LC(BSPC)  &kp Z        &kp X        &kp C        &kp V          &kp B     &kp N      &kp M          &kp COMMA      &kp DOT      &kp FSLH        &kp LC(LA(F1))
+                                        &kp LC(A)    &mo 1          &kp BSPC  &kp SPACE  &mo 2          &mo 3
             >;
         };
 
         navigation {
             bindings = <
-&trans        &trans          &mmv MOVE_UP     &trans           &mkp MCLK       &kp LG(DOT)     &kp LG(LEFT)    &kp LG(DOWN)   &kp LG(UP)     &kp LG(RIGHT)  &trans  &trans
-&kp CAPS      &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &mkp LCLK       &mkp RCLK       &kp LEFT        &kp DOWN       &kp UP         &kp RIGHT      &trans  &trans
-&trans        &kp PSCRN       &msc SCRL_LEFT   &msc SCRL_UP     &msc SCRL_DOWN  &msc SCRL_RIGHT &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP    &kp END        &trans  &trans
-                                               &trans           &trans          &trans          &trans          &trans         &trans
+&kp LS(LA(H))   &trans          &mmv MOVE_UP     &trans           &mkp MCLK       &kp LG(DOT)     &kp LA(H)  &kp LA(J)      &kp LA(K)    &kp LG(L)  &trans  &trans LS(LA(L))
+&kp CAPS        &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &mkp LCLK       &mkp RCLK       &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &trans  &kp LA(TAB)
+&kp PSCRN       &trans          &msc SCRL_LEFT   &msc SCRL_UP     &msc SCRL_DOWN  &msc SCRL_RIGHT &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &kp LA(BACKSLASH)
+                                                 &trans           &trans          &trans          &trans     &trans         &trans
             >;
         };
 
         symbols {
             bindings = <
-&kp LC(LS(TAB))  &kp EXCL  &kp AT   &kp HASH  &kp DLLR   &kp PRCNT   &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp LC(TAB)
-&kp F1           &kp F2    &kp F3   &kp F4    &kp F5     &kp F6      &kp MINUS   &kp EQUAL &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp F7           &kp F8    &kp F9   &kp F10   &kp F11    &kp F12     &kp UNDER   &kp PLUS  &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans    &trans     &kp DELETE  &trans      &trans    &trans
+&kp LA(LEFT)  &kp EXCL  &kp AT   &kp HASH  &kp DLLR   &kp PRCNT   &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp LA(RIGHT)
+&kp F1        &kp F2    &kp F3   &kp F4    &kp F5     &kp F6      &kp MINUS   &kp EQUAL &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp F7        &kp F8    &kp F9   &kp F10   &kp F11    &kp F12     &kp UNDER   &kp PLUS  &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                                 &trans    &trans     &kp DELETE  &trans      &trans    &trans
             >;
         };
 
         numbers {
             bindings = <
-&kp LA(LEFT)  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans          &trans   &trans           &trans        &trans    &trans   &trans   &kp LA(RIGHT)
-&trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0    &trans   &kp LG(LC(SPC))  &trans        &trans    &trans   &trans   &trans
-&trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans          &trans   &trans           &trans        &trans    &trans   &trans   &trans
-                                          &trans        &trans          &trans   &trans           &trans        &trans
+&kp LG(LF(H))  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp C_BRI_UP  &kp C_VOL_UP  &kp LC(LS(LEFT)) &kp LC(LS(DOWN)) &kp LC(LS(UP))  &kp LC(LS(RIGHT)) &trans         &kp LG(LF(L))
+&trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &kp C_MUTE    &kp LC(LS(F1))   &kp LC(LS(F2))   &kp LC(LS(F3))  &kp LC(LS(F4))    &kp LC(LS(F5)) &kp LC(LS(F6))
+&trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp C_BRI_DN  &kp C_VOL_DN  &trans           &trans           &trans          &trans            &trans         &trans
+                                           &trans        &trans        &trans        &trans           &trans           &tr
             >;
         };
 
