@@ -102,7 +102,7 @@
 
         numbers {
             bindings = <
-&kp LG(LF(H))  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp C_BRI_UP  &kp C_VOL_UP  &kp LC(LS(LEFT)) &kp LC(LS(DOWN)) &kp LC(LS(UP))  &kp LC(LS(RIGHT)) &none          &kp LG(LF(L))
+&kp LC(LS(H))  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp C_BRI_UP  &kp C_VOL_UP  &kp LC(LS(LEFT)) &kp LC(LS(DOWN)) &kp LC(LS(UP))  &kp LC(LS(RIGHT)) &none          &kp LC(LS(L))
 &none          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &kp C_MUTE    &kp LC(LS(F1))   &kp LC(LS(F2))   &kp LC(LS(F3))  &kp LC(LS(F4))    &kp LC(LS(F5)) &kp LC(LS(F6))
 &none          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp C_BRI_DN  &kp C_VOL_DN  &none            &none            &none           &none             &none          &none
                                            &trans        &trans        &trans        &trans           &trans           &trans
