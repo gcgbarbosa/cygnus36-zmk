@@ -5,8 +5,8 @@
 #include <dt-bindings/zmk/keys.h>
 
 // https://zmk.dev/docs/keymaps/behaviors/mouse-emulation#mouse-emulation-defines
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 15    // default: 10
+/* #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600 */
+/* #define ZMK_POINTING_DEFAULT_SCRL_VAL 15    // default: 10 */
 
 #include <dt-bindings/zmk/pointing.h>
 
@@ -17,7 +17,7 @@
 
 &msc {
     time-to-max-speed-ms = <1000>;
-    acceleration-exponent = <0>; 
+    acceleration-exponent = <0>;
 };
 
 / {
@@ -84,9 +84,9 @@
 
         navigation {
             bindings = <
-&kp LS(LA(H))   &trans          &mmv MOVE_UP     &trans           &mkp MCLK       &kp LG(DOT)     &kp LA(H)  &kp LA(J)      &kp LA(K)    &kp LG(L)  &trans  &trans LS(LA(L))
-&kp CAPS        &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &mkp LCLK       &mkp RCLK       &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &trans  &kp LA(TAB)
-&kp PSCRN       &trans          &msc SCRL_LEFT   &msc SCRL_UP     &msc SCRL_DOWN  &msc SCRL_RIGHT &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &kp LA(BACKSLASH)
+&kp LS(LA(H))   &none           &mmv MOVE_UP     &none            &mkp MCLK       &kp LG(DOT)     &kp LA(H)  &kp LA(J)      &kp LA(K)    &kp LG(L)  &none  &none LS(LA(L))
+&kp CAPS        &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &mkp LCLK       &mkp RCLK       &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &none  &kp LA(TAB)
+&kp PSCRN       &none           &msc SCRL_LEFT   &msc SCRL_UP     &msc SCRL_DOWN  &msc SCRL_RIGHT &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none  &kp LA(BACKSLASH)
                                                  &trans           &trans          &trans          &trans     &trans         &trans
             >;
         };
@@ -102,10 +102,10 @@
 
         numbers {
             bindings = <
-&kp LG(LF(H))  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp C_BRI_UP  &kp C_VOL_UP  &kp LC(LS(LEFT)) &kp LC(LS(DOWN)) &kp LC(LS(UP))  &kp LC(LS(RIGHT)) &trans         &kp LG(LF(L))
-&trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &kp C_MUTE    &kp LC(LS(F1))   &kp LC(LS(F2))   &kp LC(LS(F3))  &kp LC(LS(F4))    &kp LC(LS(F5)) &kp LC(LS(F6))
-&trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp C_BRI_DN  &kp C_VOL_DN  &trans           &trans           &trans          &trans            &trans         &trans
-                                           &trans        &trans        &trans        &trans           &trans           &tr
+&kp LG(LF(H))  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp C_BRI_UP  &kp C_VOL_UP  &kp LC(LS(LEFT)) &kp LC(LS(DOWN)) &kp LC(LS(UP))  &kp LC(LS(RIGHT)) &none          &kp LG(LF(L))
+&none          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &kp C_MUTE    &kp LC(LS(F1))   &kp LC(LS(F2))   &kp LC(LS(F3))  &kp LC(LS(F4))    &kp LC(LS(F5)) &kp LC(LS(F6))
+&none          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp C_BRI_DN  &kp C_VOL_DN  &none            &none            &none           &none             &none          &none
+                                           &trans        &trans        &trans        &trans           &trans           &trans
             >;
         };
 
